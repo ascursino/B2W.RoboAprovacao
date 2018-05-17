@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E34D045B-5232-44F3-9C8F-2A3C521747DA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMO.Cambios.CA.RoboAprovacao</RootNamespace>
+    <AssemblyName>PMO.Cambios.CA.RoboAprovacao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6cceae6a4844c51b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Dns, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=6fc67824e0089991, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Dns.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Groupware, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=db51b95d57ebfe25, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Groupware.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Imap4, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=9d424b1770e92b68, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Imap4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Mail, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=851b9e39ef2572fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Mail.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Nntp, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=01416978360a49a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Nntp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.OpenPGP, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=0e094b86584219e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.OpenPGP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Pop3, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=962567372c07b9fe, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Pop3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Smtp, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=366752d00f09ae34, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.Smtp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ActiveUp.Net.WhoIs, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=6b9afb81c1de5ed4, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailSystem.NET.2.0.1\lib\ActiveUp.Net.WhoIs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.6.0\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="MailRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ListaData\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.datasvcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ServiceReferenceMetadataStorage Include="Service References\ListaData\">
+      <Type>datasvcmap</Type>
+    </ServiceReferenceMetadataStorage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Service References\ListaData\service.edmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ListaData\Reference.datasvcmap">
+      <Generator>DataServicesCoreClientGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
